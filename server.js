@@ -5,7 +5,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const favicon = require('express-favicon');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 80;
 app.listen(port);
 
 app.use(favicon(__dirname + '/build/favicon.png')); 
